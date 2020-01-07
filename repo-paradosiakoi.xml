@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-stylesheet type="text/xsl" href="plugins.xsl"?>
+<plugins>
+    <pyqgis_plugin name="Paradosiakoi Oikismoi plugin" version="1.0.0" plugin_id="147">
+        <description><![CDATA[Διαχείριση θεσμικού πλαισίου παραδοσιακών οικισμών του Αιγαίου Πελάγους.]]></description>
+        <about></about>
+        <version>1.0.0</version>
+        <qgis_minimum_version>2.0</qgis_minimum_version>
+        <qgis_maximum_version>2.0</qgis_maximum_version>
+        <homepage><![CDATA[http://www.geographer.gr/]]></homepage>
+        <file_name>paradosiakoioikismoi.zip</file_name>
+        <icon>/static/packages/survey.png</icon>
+        <author_name><![CDATA[Leonidas Liakos]]></author_name>
+        <download_url>http://geographer.gr/qgis/plugins/paradosiakoioikismoi/paradosiakoioikismoi.zip</download_url>
+        <uploaded_by><![CDATA[Leonidas Liakos ]]></uploaded_by>
+        <create_date>Tue Apr  1 15:42:37 EEST 2014</create_date>
+        <update_date>Tue Apr  1 15:42:37 EEST 2014</update_date>
+        <experimental>False</experimental>
+        <deprecated>False</deprecated>
+        <tracker><![CDATA[]]></tracker>
+        <repository><![CDATA[]]></repository>
+        <tags><![CDATA[aegean,traditional, settlements]]></tags>
+        <downloads>0</downloads>
+        <average_vote>0</average_vote>
+        <rating_votes>0</rating_votes>
+    </pyqgis_plugin>
+</plugins>

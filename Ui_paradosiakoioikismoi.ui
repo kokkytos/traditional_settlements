@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>892</width>
+    <height>695</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Παραδοσιακοί οικισμοί - Φόρμα αναζήτησης</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <item>
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="tab">
+       <attribute name="title">
+        <string>Πολεοδομική νομοθεσία</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_8">
+        <item>
+         <widget class="QTableView" name="tableViewNomothesia"/>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_2">
+       <attribute name="title">
+        <string>Δημογραφικοί δείκτες 2001</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout">
+        <item row="1" column="0">
+         <widget class="QLabel" name="label">
+          <property name="text">
+           <string>Πληθυσμός</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QLabel" name="label_2">
+          <property name="text">
+           <string>Αναλογία Ανδρών – Γυναικών</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="1">
+         <widget class="QLineEdit" name="lineEdit_dapp"/>
+        </item>
+        <item row="6" column="0">
+         <widget class="QLabel" name="label_6">
+          <property name="text">
+           <string>Αναλογία ηλικιωμένων (65+) προς δυνητικά ενεργό πληθυσμό (15-64)</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="0">
+         <widget class="QLabel" name="label_3">
+          <property name="text">
+           <string>Δείκτης γήρανσης πληθυσμού</string>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="1">
+         <widget class="QLineEdit" name="lineEdit_de"/>
+        </item>
+        <item row="4" column="1">
+         <widget class="QLineEdit" name="lineEdit_dgp"/>
+        </item>
+        <item row="1" column="1">
+         <widget class="QLineEdit" name="lineEdit_Pop"/>
+        </item>
+        <item row="3" column="0">
+         <widget class="QLabel" name="label_4">
+          <property name="text">
+           <string>Δείκτης αντικατάστασης παραγωγικού πληθυσμού</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="QLineEdit" name="lineEdit_mw"/>
+        </item>
+        <item row="10" column="0">
+         <spacer name="verticalSpacer">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="7" column="0">
+         <widget class="QLabel" name="label_7">
+          <property name="text">
+           <string>Αναλογία (%) των ατόµων άνω των 65 ετών επί του συνολικού πληθυσµού</string>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="0">
+         <widget class="QLabel" name="label_5">
+          <property name="text">
+           <string>Δείκτης εξάρτησης</string>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="1">
+         <widget class="QLineEdit" name="lineEdit_ilikiomenoi1"/>
+        </item>
+        <item row="7" column="1">
+         <widget class="QLineEdit" name="lineEdit_ilikiomenoi2"/>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_3">
+       <attribute name="title">
+        <string>Πληθυσμιακή πυραμίδα 2001</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_4"/>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>892</width>
+     <height>19</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>Θεματικά επίπεδα</string>
+    </property>
+    <addaction name="actionAddOikismoi"/>
+    <addaction name="actionAddOria"/>
+    <addaction name="actionKtima"/>
+   </widget>
+   <addaction name="menu"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar">
+   <property name="statusTip">
+    <string/>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(0, 0, 0, 255), stop:1 rgba(255, 255, 255, 255));</string>
+   </property>
+   <property name="sizeGripEnabled">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionZoomOikismos"/>
+   <addaction name="actionFek"/>
+   <addaction name="actionZoomOrio"/>
+   <addaction name="actionReport"/>
+  </widget>
+  <widget class="QDockWidget" name="dockWidget">
+   <property name="font">
+    <font>
+     <weight>50</weight>
+     <bold>false</bold>
+     <stylestrategy>PreferDefault</stylestrategy>
+    </font>
+   </property>
+   <property name="features">
+    <set>QDockWidget::DockWidgetFloatable|QDockWidget::DockWidgetMovable</set>
+   </property>
+   <attribute name="dockWidgetArea">
+    <number>1</number>
+   </attribute>
+   <widget class="QWidget" name="dockWidgetContents">
+    <layout class="QVBoxLayout" name="verticalLayout_6">
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_7">
+       <item>
+        <widget class="QGroupBox" name="groupBox">
+         <property name="title">
+          <string>Νομοί</string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout">
+          <item>
+           <widget class="QListView" name="listViewNomoi">
+            <property name="toolTip">
+             <string extracomment="Επιλέξτε οικισμό"/>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_2">
+         <property name="title">
+          <string>Δήμοι</string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_5">
+          <item>
+           <widget class="QListView" name="listViewDhmoi"/>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_3">
+         <property name="title">
+          <string>Οικισμοί</string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_3">
+          <item>
+           <widget class="QCheckBox" name="checkBoxParadosiakoi">
+            <property name="text">
+             <string>Προβολή μόνο παραδοσιακών οικισμών</string>
+            </property>
+            <property name="checked">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QListView" name="listViewOikismoi"/>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <action name="actionZoomOikismos">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/plugins/paradosiakoioikismoi/icons/1394568050_Zoom.png</normaloff>:/plugins/paradosiakoioikismoi/icons/1394568050_Zoom.png</iconset>
+   </property>
+   <property name="text">
+    <string>Επιλογή και εστίαση στον οικισμό</string>
+   </property>
+  </action>
+  <action name="actionFek">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/plugins/paradosiakoioikismoi/icons/product-sales-report-icon.png</normaloff>:/plugins/paradosiakoioikismoi/icons/product-sales-report-icon.png</iconset>
+   </property>
+   <property name="text">
+    <string>Προβολή υλικού τεκμηρίωσης</string>
+   </property>
+   <property name="toolTip">
+    <string>Προβολή υλικού τεκμηρίωσης</string>
+   </property>
+  </action>
+  <action name="actionAddOikismoi">
+   <property name="text">
+    <string>Οικισμοί</string>
+   </property>
+   <property name="toolTip">
+    <string>Προσθήκη θεματικού επιπέδου</string>
+   </property>
+  </action>
+  <action name="actionAddOria">
+   <property name="text">
+    <string>Όρια παραδοσιακών οικισμών</string>
+   </property>
+  </action>
+  <action name="actionZoomOrio">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/plugins/paradosiakoioikismoi/icons/1394568050_Zoom_oria.png</normaloff>:/plugins/paradosiakoioikismoi/icons/1394568050_Zoom_oria.png</iconset>
+   </property>
+   <property name="text">
+    <string>Επιλογή και εστίαση στο όριο</string>
+   </property>
+   <property name="toolTip">
+    <string>Επιλογή και εστίαση στο όριο</string>
+   </property>
+  </action>
+  <action name="actionKtima">
+   <property name="text">
+    <string>Ορθοφωτοχάρτες (Εθνικό Κτηματολόγιο)</string>
+   </property>
+  </action>
+  <action name="actionReport">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/plugins/paradosiakoioikismoi/icons/1394568131_pdf.png</normaloff>:/plugins/paradosiakoioikismoi/icons/1394568131_pdf.png</iconset>
+   </property>
+   <property name="text">
+    <string>Δημιουργία αναφοράς σε μορφή pdf</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>
